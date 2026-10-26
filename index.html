@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracciamento online e raccolta dati | Cittadinanza digitale</title>
+    <meta
+      name="description"
+      content="Sito di educazione civica su cookie, tracciamento online, raccolta dei dati, privacy, profilazione e comportamenti consapevoli."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Barra che mostra lo scorrimento della pagina -->
+    <div class="reading-progress"></div>
+
+    <!-- Header con logo e menu -->
+    <header class="site-header">
+      <a class="brand" href="#home">
+        <span class="brand-mark">
+          <img class="brand-cookie" src="assets/cookie-conclusion.png">
+        </span>
+        <span>
+          <strong>Tracking & Dati</strong>
+          <small>Cittadinanza digitale</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#tecnica">Tecnica</a>
+        <a href="#etica">Etica</a>
+        <a href="#casi">Casi</a>
+        <a href="#soluzioni">Soluzioni</a>
+        <a href="#fonti">Fonti</a>
+      </nav>
+
+      <button class="menu-toggle" type="button">
+        <span class="menu-lines"></span>
+      </button>
+    </header>
+
+    <main id="contenuto">
+      <!-- Hero iniziale con titolo, banner e video -->
+      <section class="hero" id="home">
+        <img class="hero-media" src="assets/tracking-hero.png">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 id="hero-title">Tracciamento online e raccolta dei dati</h1>
+          <p class="lead">
+            Ogni ricerca, clic, video visto o carrello abbandonato può lasciare una traccia.
+            Il punto non è demonizzare la tecnologia, ma capire quando ci aiuta e quando limita
+            privacy, scelta e libertà.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#laboratorio">Simulazione</a>
+            <a class="button secondary" href="#tecnica">Come funziona?</a>
+          </div>
+        </div>
+
+        <div class="hero-video">
+          <p class="video-kicker">Video consigliato</p>
+          <h2 id="hero-video-title">Tracciamento online e raccolta dati</h2>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/ifvEbR378Aw?rel=0&modestbranding=1"
+              title="Cookie e privacy: le novità per gli utenti"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="video-source" href="https://www.gpdp.it/web/guest/temi/cookie">
+            Fonte: Garante Privacy
+          </a>
+        </div>
+      </section>
+
+      <!-- Domanda guida del progetto -->
+      <section class="section intro-band">
+        <div class="container two-columns">
+          <div>
+            <p class="eyebrow">Domanda guida</p>
+            <h2 id="problema-title">Quanto siamo davvero liberi online se ogni nostra azione viene tracciata?</h2>
+          </div>
+          <div class="text-block">
+            <p>
+              Online non paghiamo sempre con denaro: spesso paghiamo con attenzione e dati.
+              Un sito può ricordare il login o il carrello, ma può anche seguire abitudini,
+              interessi, orari, dispositivi e possibili preferenze personali.
+            </p>
+            <p>
+              La questione civica nasce qui: un cittadino digitale deve poter usare servizi utili
+              senza essere trasformato in un profilo invisibile, difficile da controllare e usato
+              per influenzare pubblicità, prezzi, contenuti e decisioni.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spiegazione tecnica del tracciamento -->
+      <section class="section" id="tecnica">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Spiegazione tecnica</p>
+            <h2 id="tecnica-title">Dal clic al profilo: cosa succede dietro le quinte</h2>
+            <p>
+              Il tracciamento nasce da tecnologie diverse. Alcune sono indispensabili al funzionamento
+              di un sito, altre servono a misurare il traffico, altre ancora a riconoscere l'utente
+              su siti e app differenti.
+            </p>
+          </div>
+
+          <div class="tech-flow">
+            <article class="flow-step">
+              <span class="step-number">01</span>
+              <h3>Richiesta HTTP</h3>
+              <p>
+                Quando apriamo una pagina, il browser invia una richiesta al server.
+                Nei log possono comparire indirizzo IP, orario, pagina richiesta,
+                browser e sistema operativo.
+              </p>
+            </article>
+            <article class="flow-step">
+              <span class="step-number">02</span>
+              <h3>Cookie e storage</h3>
+              <p>
+                Il server può chiedere al browser di salvare un piccolo dato, come un ID di sessione.
+                Al ritorno sul sito, il browser rimanda quel dato e il sito ci riconosce.
+              </p>
+            </article>
+            <article class="flow-step">
+              <span class="step-number">03</span>
+              <h3>Terze parti</h3>
+              <p>
+                Script, annunci, pulsanti social o sistemi analytics caricati da domini esterni
+                possono ricevere informazioni sulla visita. Se sono presenti su molti siti,
+                possono collegare comportamenti diversi.
+              </p>
+            </article>
+            <article class="flow-step">
+              <span class="step-number">04</span>
+              <h3>Profilazione</h3>
+              <p>
+                Le tracce vengono aggregate per stimare interessi, abitudini, età probabile,
+                intenzioni di acquisto o orientamenti. Il risultato non è una persona completa,
+                ma una categoria usabile per decisioni automatiche.
+              </p>
+            </article>
+          </div>
+
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <caption>Tipi di dati e livello di rischio</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tecnologia</th>
+                  <th scope="col">A cosa serve</th>
+                  <th scope="col">Dato raccolto</th>
+                  <th scope="col">Rischio principale</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cookie tecnici</th>
+                  <td>Login, carrello, lingua, sicurezza della sessione.</td>
+                  <td>ID temporaneo o preferenza scelta dall'utente.</td>
+                  <td>Basso, se usati solo per il servizio richiesto.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cookie analytics</th>
+                  <td>Statistiche su visite, pagine lette e problemi del sito.</td>
+                  <td>Eventi di navigazione, dispositivo, area geografica stimata.</td>
+                  <td>Medio, se i dati non sono minimizzati o sono condivisi con terzi.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cookie di profilazione</th>
+                  <td>Pubblicità personalizzata e segmentazione commerciale.</td>
+                  <td>Interessi, ricerche, pagine viste, interazioni nel tempo.</td>
+                  <td>Alto, perché può seguire l'utente e influenzare ciò che vede.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fingerprinting</th>
+                  <td>Riconoscere un browser anche senza cookie.</td>
+                  <td>Lingua, fuso orario, schermo, impostazioni, caratteristiche tecniche.</td>
+                  <td>Alto, perché è meno visibile e più difficile da controllare.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simulazione realizzata con JavaScript -->
+      <section class="section alt-section" id="laboratorio">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">JavaScript</p>
+            <h2 id="lab-title">Laboratorio: scegli il livello di tracciamento</h2>
+            <p>
+              Questa simulazione non invia dati a nessun server. Serve a mostrare come cambiano
+              le informazioni raccolte quando si passa da un uso tecnico a un uso di profilazione.
+            </p>
+          </div>
+
+          <div class="lab-layout">
+            <div class="lab-panel">
+              <h3 id="scenario-title">Scenario</h3>
+              <fieldset class="choice-grid">
+                <legend>Quale consenso immagini di dare?</legend>
+                <label>
+                  <input type="radio" name="tracking-level" value="necessary" checked>
+                  <span>Solo necessari</span>
+                </label>
+                <label>
+                  <input type="radio" name="tracking-level" value="analytics">
+                  <span>Analytics minimizzati</span>
+                </label>
+                <label>
+                  <input type="radio" name="tracking-level" value="profiling">
+                  <span>Profilazione</span>
+                </label>
+                <label>
+                  <input type="radio" name="tracking-level" value="fingerprint">
+                  <span>Fingerprinting</span>
+                </label>
+              </fieldset>
+
+              <div class="lab-actions">
+                <button class="button primary" type="button" data-cookie-save>Simula cookie</button>
+                <button class="button ghost" type="button" data-cookie-clear>Cancella demo</button>
+              </div>
+
+              <p class="small-note" data-cookie-state>
+                Nessun cookie demo creato.
+              </p>
+            </div>
+
+            <div class="lab-panel result-panel">
+              <h3 data-result-title>Solo necessari</h3>
+              <p data-result-copy>
+                Il sito salva solo ciò che serve alla navigazione: sessione, lingua o carrello.
+              </p>
+
+              <div class="risk-meter">
+                <span>Rischio civico</span>
+                <div class="meter-track">
+                  <span class="meter-fill" data-risk-fill></span>
+                </div>
+                <strong data-risk-label>Basso</strong>
+              </div>
+
+              <ul class="data-list" data-data-list></ul>
+            </div>
+
+            <div class="lab-panel fingerprint-panel">
+              <h3>Impronta locale del browser</h3>
+              <p>
+                Alcuni dettagli tecnici, presi singolarmente, sembrano innocui. Insieme possono
+                rendere un dispositivo più riconoscibile.
+              </p>
+              <button class="button secondary" type="button" data-fingerprint>Mostra dati locali</button>
+              <dl class="browser-facts" data-browser-facts></dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Aspetti etici e civici -->
+      <section class="section" id="etica">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Aspetti etici e civici</p>
+            <h2 id="etica-title">Privacy non significa nascondersi: significa poter scegliere</h2>
+            <p>
+              La privacy è una condizione per partecipare alla vita digitale senza paura di essere
+              osservati, classificati o manipolati in modo opaco.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="info-card">
+              <h3>Libertà di scelta</h3>
+              <p>
+                Se un feed, una pubblicità o un prezzo sono personalizzati senza spiegazioni,
+                l'utente non sa quanto la propria decisione sia davvero autonoma.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Consenso informato</h3>
+              <p>
+                Dire "accetto" dovrebbe essere una scelta libera e chiara, non il risultato di
+                pulsanti ingannevoli, testi confusi o rifiuti nascosti.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Disuguaglianze</h3>
+              <p>
+                La profilazione può trattare in modo diverso gruppi di persone: offerte, annunci,
+                opportunità e contenuti possono cambiare in base a categorie costruite dai dati.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Responsabilità</h3>
+              <p>
+                Gli utenti devono essere consapevoli, ma aziende e sviluppatori hanno il dovere
+                di progettare servizi trasparenti, sicuri e proporzionati.
+              </p>
+            </article>
+          </div>
+
+          <div class="law-strip">
+            <p>
+              In Europa il GDPR considera dati personali anche elementi come indirizzo IP,
+              cookie ID e identificatori pubblicitari quando possono ricondurre a una persona.
+              Il DSA rafforza inoltre la trasparenza della pubblicità online e vieta alcune forme
+              di targeting verso minori o basate su dati sensibili.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casi concreti con apertura al click -->
+      <section class="section alt-section" id="casi">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Casi concreti</p>
+            <h2 id="casi-title">Quando le tracce diventano conseguenze reali</h2>
+          </div>
+
+          <div class="case-list" data-case-list>
+            <article class="case-item case-cambridge">
+              <button class="case-toggle" type="button">
+                <span class="case-year">2019</span>
+                <span class="case-title">Cambridge Analytica</span>
+              </button>
+              <div class="case-body">
+                <p>
+                  La FTC statunitense ha contestato l'uso di pratiche ingannevoli per raccogliere
+                  dati personali da decine di milioni di utenti Facebook e usarli per profilazione
+                  elettorale. Il caso mostra che dati raccolti per un'app o un test possono uscire
+                  dal contesto iniziale e influenzare processi democratici.
+                </p>
+              </div>
+            </article>
+            <article class="case-item case-analytics">
+              <button class="case-toggle" type="button">
+                <span class="case-year">2022</span>
+                <span class="case-title">Google Analytics e trasferimenti extra UE</span>
+              </button>
+              <div class="case-body">
+                <p>
+                  Il Garante Privacy italiano ha richiamato l'attenzione sui siti che usavano
+                  Google Analytics senza garanzie adeguate per il trasferimento dei dati negli USA.
+                  Il punto civico è che anche una statistica di visita può diventare dato personale
+                  se collegata a IP, browser, sistema operativo, lingua e orario.
+                </p>
+              </div>
+            </article>
+            <article class="case-item case-cookie-banner">
+              <button class="case-toggle" type="button">
+                <span class="case-year">2023</span>
+                <span class="case-title">Cookie banner ingannevoli</span>
+              </button>
+              <div class="case-body">
+                <p>
+                  Il lavoro dell'EDPB sui cookie banner ha evidenziato problemi come assenza di un
+                  rifiuto chiaro, caselle preselezionate, colori che spingono ad accettare e difficoltà
+                  nel revocare il consenso. Il design non è neutrale: può aiutare o manipolare.
+                </p>
+              </div>
+            </article>
+            <article class="case-item case-retargeting">
+              <button class="case-toggle" type="button">
+                <span class="case-year">Oggi</span>
+                <span class="case-title">Retargeting quotidiano</span>
+              </button>
+              <div class="case-body">
+                <p>
+                  Dopo aver guardato scarpe, voli o videogiochi, può capitare di vedere annunci
+                  simili su altri siti. Non è magia: spesso è il risultato di cookie di terze parti,
+                  identificatori pubblicitari o sistemi di profilazione che collegano visite diverse.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comportamenti corretti e possibili soluzioni -->
+      <section class="section" id="soluzioni">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Comportamenti corretti</p>
+            <h2 id="soluzioni-title">Come ridurre il tracciamento senza rinunciare al web</h2>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="solution-block">
+              <h3>Per gli utenti</h3>
+              <ul class="check-list">
+                <li>Leggere i banner principali e scegliere "rifiuta" o "personalizza" quando possibile.</li>
+                <li>Bloccare cookie di terze parti o usare la protezione antitracciamento del browser.</li>
+                <li>Separare account personali, scuola e acquisti quando serve più riservatezza.</li>
+                <li>Controllare periodicamente autorizzazioni, cronologia, ID pubblicitario e app collegate.</li>
+                <li>Diffidare dei test virali che chiedono accesso a profilo, amici o dati non necessari.</li>
+              </ul>
+            </article>
+
+            <article class="solution-block">
+              <h3>Per chi crea siti</h3>
+              <ul class="check-list">
+                <li>Raccogliere solo dati necessari allo scopo dichiarato.</li>
+                <li>Separare cookie tecnici da analytics e profilazione.</li>
+                <li>Rendere "accetta" e "rifiuta" ugualmente chiari e facili.</li>
+                <li>Usare analytics minimizzati, statistiche aggregate e tempi di conservazione limitati.</li>
+                <li>Permettere la revoca del consenso con la stessa facilità con cui è stato dato.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusione finale -->
+      <section class="section conclusion-section" id="conclusioni">
+        <div class="container conclusion-layout">
+          <div class="conclusion-copy">
+            <p class="eyebrow">Conclusioni</p>
+            <h2 id="conclusioni-title">La tecnologia deve essere comprensibile per essere democratica</h2>
+            <p>
+              Il tracciamento online non è sempre negativo: senza alcuni dati molti servizi sarebbero
+              meno sicuri o meno comodi. Il problema nasce quando la raccolta diventa eccessiva,
+              invisibile o usata per condizionare le persone senza spiegazioni.
+            </p>
+            <p>
+              Essere cittadini digitali significa pretendere trasparenza, usare strumenti di protezione
+              e capire che ogni scelta tecnica ha un effetto sociale. Un buon sito non deve chiedere
+              "tutto per abitudine", ma solo ciò che serve davvero.
+            </p>
+          </div>
+          <div class="conclusion-visual">
+            <img src="assets/cookie-conclusion.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- Fonti usate per il lavoro -->
+      <section class="section sources-section" id="fonti">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Fonti</p>
+            <h2 id="fonti-title">Siti consultati</h2>
+          </div>
+
+          <ul class="sources-list">
+            <li>
+              <a href="https://www.gpdp.it/web/guest/temi/cookie">
+                Garante Privacy - Cookie
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=ifvEbR378Aw">
+                Garante Privacy - Video "Cookie e privacy"
+              </a>
+            </li>
+            <li>
+              <a href="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9782874">
+                Garante Privacy - Google Analytics e trasferimento dati
+              </a>
+            </li>
+            <li>
+              <a href="https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en">
+                Commissione Europea - Data protection explained
+              </a>
+            </li>
+            <li>
+              <a href="https://digital-strategy.ec.europa.eu/en/faqs/digital-services-act-questions-and-answers">
+                Commissione Europea - Digital Services Act, domande e risposte
+              </a>
+            </li>
+            <li>
+              <a href="https://www.edpb.europa.eu/system/files/2023-01/edpb_20230118_report_cookie_banner_taskforce_en.pdf">
+                EDPB - Report of the Cookie Banner Taskforce
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3107-cambridge-analytica-llc-matter">
+                Federal Trade Commission - Cambridge Analytica
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies">
+                MDN Web Docs - Using HTTP cookies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer finale -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Educazione civica e TPSIT - Tracciamento online e raccolta dati</p>
+        <a href="#home">Torna su</a>
+      </div>
+    </footer>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
